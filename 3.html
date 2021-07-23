@@ -3,18 +3,48 @@
 <head>
   <title> HTML 실습 - JS</title>
   <meta charset="utf-8">
+  <style>
+    body{margin:0;}
+    #now{color:orange;}
+    .list{color:green;}
+    a{color:red;}
+    #grid{
+      display:grid;
+      grid-template-columns:150px 1fr;
+    }
+    #article{
+      padding-left:20px;
+      padding-right:20px;
+    }
+    h1{
+      text-size:50px;
+      text-align:center;
+      border-bottom:4px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    #grid ul{
+      border-right:4px solid gray;
+      margin:0;
+      padding:20px;
+    }
+  </style>
 </head>
 <body>
-  <ul>
-    <li><a href="index.html">HOME</a></li>
-    <li><a href="1.html">1.HTML</a></li>
-    <li><a href="2.html">2.CSS</a></li>
-    <li><a href="3.html">3.JavaScript</a></li>
-  </ul>
   <h1>헬로 JS</h1>
-  <p>
-    <a href="https://2019.stateofjs.com/" target="_blank" title="자바스크립트2019">JavaScript</a>
-  <p>
-    <img src="lemi2.jpg" width="400"></p>
+  <div id="grid">
+    <ul type="none">
+      <li><a href="index.html" class="list">HOME</a></li>
+      <li><a href="1.html" class="list">1.HTML</a></li>
+      <li><a href="2.html" class="list">2.CSS</a></li>
+      <li><a href="3.html" class="list" id="now">3.JavaScript</a></li>
+    </ul>
+    <div id="article">
+      <p>
+        <a href="https://2019.stateofjs.com/" target="_blank" title="자바스크립트2019">JavaScript</a>
+      <p>
+        <img src="lemi2.jpg" width="400"></p>
+    </div>
+  </div>
 </body>
 </html>
